@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mix: one
+  genre: one
+
+two:
+  mix: two
+  genre: two
