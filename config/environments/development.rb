@@ -1,4 +1,15 @@
 Rails.application.configure do
+
+  config.paperclip_defaults = {
+  storage: :s3,
+  s3_credentials: {
+    bucket: "communityarchivebucket",
+    access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+    secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+    s3_region: "london",
+  }
+  }
+
   # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = true
 

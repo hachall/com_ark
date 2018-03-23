@@ -13,10 +13,10 @@ module ComArk
     config.filter_parameters += [:password]
 
     AWS::S3::Base.establish_connection!(
-    :access_key_id     => ENV['AWS_ACCESS_ID'],
-    :secret_access_key => ENV['AWS_SECRET_KEY']
+    :access_key_id     => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     )
-    BUCKET = 'com_ark'
+    BUCKET = 'communityarchivebucket'
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
