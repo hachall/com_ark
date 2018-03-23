@@ -1,2 +1,6 @@
-<h1>Mixes#new</h1>
-<p>Find me in app/views/mixes/new.html.erb</p>
+<%= simple_form_for @mix, url: mixes_path do |form| %>
+  <%= form.input :name %>
+  <%= form.input :audio, as: :file %>
+  <%= form.input :image, as: :file %>
+  <%= form.submit %>
+<% end %>

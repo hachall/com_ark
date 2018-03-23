@@ -12,11 +12,12 @@ module ComArk
     config.encoding = "utf-8"
     config.filter_parameters += [:password]
 
-    AWS::S3::Base.establish_connection!(
-    :access_key_id     => ENV['AWS_ACCESS_KEY_ID'],
-    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-    )
-    BUCKET = 'communityarchivebucket'
+    # include Aws::S3
+    # Aws::S3::Base.establish_connection!(
+    # :access_key_id     => ENV['AWS_ACCESS_KEY_ID'],
+    # :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    # )
+    # BUCKET = 'communityarchivebucket'
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1

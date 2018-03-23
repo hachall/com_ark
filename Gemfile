@@ -7,8 +7,9 @@ end
 
 
 gem "paperclip", "~> 5.2.1"
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 2.3'
 gem 'figaro'
+gem 'simple_form'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
