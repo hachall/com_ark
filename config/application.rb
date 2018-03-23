@@ -9,10 +9,14 @@ Bundler.require(*Rails.groups)
 module ComArk
   class Application < Rails::Application
 
+    config.encoding = "utf-8"
+    config.filter_parameters += [:password]
+
     AWS::S3::Base.establish_connection!(
     :access_key_id     => ENV['AWS_ACCESS_ID'],
     :secret_access_key => ENV['AWS_SECRET_KEY']
     )
+    BUCKET = 'com_ark'
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
