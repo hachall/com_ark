@@ -1,0 +1,37 @@
+// Import Google fonts
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+@import url("http://allfont.net/allfont.css?fonts=franklin-gothic-medium");
+@import url("http://www.allfont.es/allfont.css?fonts=franklin-gothic-medium");
+@import url("http://allfont.net/allfont.css?fonts=franklin-gothic-book");
+$body-font: "Montserrat", "Helvetica", "sans-serif";
+$headers-font: "Franklin Gothic Medium", "arial", "300", "sans-serif";
+$franklin: 'Franklin Gothic Medium', "arial", "300", "Regular";
+$franklin-book: 'Franklin Gothic Book', arial;
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('FranklinGothic-Medium.woff2') format('woff2'),
+        url('FranklinGothic-Medium.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('FranklinGothic-MediumItalic.woff2') format('woff2'),
+        url('FranklinGothic-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Medium Cond';
+    src: url('FranklinGothic-MediumCond.woff2') format('woff2'),
+        url('FranklinGothic-MediumCond.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+$franklin-headers: "Franklin Gothic", "arial", "300", "sans-serif";
+$franklin-lighter: "Franklin Gothic", "arial", "100", "sans-serif";
+// $franklin-lighter: "Franklin Gothic", "100", "lighter";
