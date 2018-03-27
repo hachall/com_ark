@@ -1,5 +1,6 @@
 <%= simple_form_for @mix, url: mixes_path do |form| %>
   <%= form.input :name %>
+  <%= form.association :genres, as: :check_boxes %>
   <%= form.input :audio, as: :file %>
   <%= form.input :image, as: :file %>
   <%= form.submit %>

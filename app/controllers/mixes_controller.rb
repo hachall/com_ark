@@ -5,6 +5,10 @@ class MixesController < ApplicationController
     @mix = Mix.find(params[:id])
   end
 
+  def index
+    @mixes = Mix.all
+
+  end
 
   def new
     @mix = Mix.new
